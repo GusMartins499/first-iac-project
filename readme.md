@@ -5,7 +5,7 @@ Here are the CLI commands I have learned.
 
 ---
 
-## Prerequisites
+## Pre-requisites
 - AWS CLI configured with **SSO authentication**  
 - Terraform installed on your machine  
 
@@ -27,7 +27,7 @@ terraform validate
 ```bash
 terraform plan
 ```
-so far
+
 ### 4. Apply changes  
 ```bash
 terraform apply
@@ -44,6 +44,19 @@ terraform destroy
 ```
 
 ---
+
+### 6. Workspaces
+```bash
+terraform workspace new [workspace-name]
+```
+To list all workspaces
+```bash
+terraform workspace list
+```
+To select a workspace
+```bash
+terraform workspace select [workspace-name]
+```
 
 ## Visual Workflow
 
