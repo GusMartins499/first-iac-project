@@ -58,6 +58,17 @@ To select a workspace
 terraform workspace select [workspace-name]
 ```
 
+### 7. Datasources
+
+A datasource is an external source that provides information about existing resources.
+It is read-only and does not create or modify anything, it just retrieves data
+to be used in the Terraform configuration.
+
+### 8. Outputs
+
+An output is a way to expose information from your Terraform configuration.
+It can show values from resources that were created, from data sources, or from variables.
+
 ## Visual Workflow
 
 ```mermaid
