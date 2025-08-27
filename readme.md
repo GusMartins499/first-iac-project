@@ -69,6 +69,8 @@ to be used in the Terraform configuration.
 An output is a way to expose information from your Terraform configuration.
 It can show values from resources that were created, from data sources, or from variables.
 
+---
+
 ## Visual Workflow
 
 ```mermaid
@@ -83,4 +85,6 @@ flowchart LR
 
 ## Notes
 - Always run `terraform plan` before `apply`.  
-- Use `-auto-approve` with caution, since it bypasses the confirmation step.  
+- Use `-auto-approve` with caution, since it bypasses the confirmation step.
+- Use `terraform fmt` to lint.
+- To create new modules or updating modules is mandatory to execute `terraform init`
