@@ -21,8 +21,8 @@ module "cloudfront" {
 }
 
 module "sqs" {
-  source  = "terraform-aws-modules/sqs/aws"
-  name = "rocketseat-120-sqs"
+  source     = "terraform-aws-modules/sqs/aws"
+  name       = "rocketseat-120-sqs"
   create_dlq = true
 
   tags = {
